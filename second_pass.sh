@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # SID is the viallabel (file name prefix)
 # code used to do first pass alignment:
 
@@ -13,9 +15,7 @@
 #       --quantMode TranscriptomeSAM\
 
 # screen -S star_secondpass
-# sdev -c 4 -m 20G -t 48:00:00 
-
-#!/bin/sh
+# sdev -c 4 -m 20G -t 48:00:00
 
 module load star/2.7.0d
 
