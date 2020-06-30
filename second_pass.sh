@@ -15,6 +15,8 @@
 # screen -S star_secondpass
 # sdev -c 4 -m 20G -t 48:00:00 
 
+#!/bin/sh
+
 module load star/2.7.0d
 
 gindex=/oak/stanford/groups/smontgom/nicolerg/MOTRPAC/RNA/REFERENCES/rn6_ensembl_r95/star_index
