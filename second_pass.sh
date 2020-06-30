@@ -15,12 +15,16 @@
 # screen -S star_secondpass
 # sdev -c 4 -m 20G -t 48:00:00 
 
-module load star/2.7.0d
+module load STAR/2.7.0d
 
 gindex=/oak/stanford/groups/smontgom/nicolerg/MOTRPAC/RNA/REFERENCES/rn6_ensembl_r95/star_index
+# This is the path to the STAR index.
 base=/projects/motrpac/PASS1A/RNA/NOVASEQ_BATCH1/from_bic
+# This is the path to the directory with the STAR Align and FastQ files.
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass
+# This is the directory where all the files will output.
 sample=80000885526
+# This is the first sample we will be testing– the code will eventually be parallelized so each sample is not completed individually.
 
 STAR --genomeDir ${gindex} \
 	 --outSAMstrandField intronMotif \
