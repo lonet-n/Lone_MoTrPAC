@@ -39,11 +39,11 @@ sample=80000885526
 # This is the first sample we will be testing– the code will eventually be parallelized so each sample is not completed individually.
 
 STAR 	 --genomeDir ${gindex} \
-	 --outSAMstrandField intronMotif \
-	 --readFilesCommand zcat \
 	 --sjdbFileChrStartEnd ${base}/star_align/*.SJ.out.tab \
 	 --readFilesIn ${base}/fastq_trim/${sample}_R1.fastq.gz ${base}/fastq_trim/${sample}_R2.fastq.gz \
-	 --outSAMtype BAM Unsorted \
 	 --outFileNamePrefix ${outdir}/${sample} \
+	 --outSAMstrandField intronMotif \
+	 --readFilesCommand zcat \
 	 --runThreadN 4
+	 --outSAMtype BAM Unsorted \
 
