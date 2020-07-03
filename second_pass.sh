@@ -7,7 +7,7 @@
 #SBATCH --partition=interactive
 #SBATCH --account=default
 #SBATCH --time=12:00:00
-#SBATCH --mem-per-cpu=5G
+#SBATCH --mem-per-cpu=10G
 
 
 # SID is the viallabel (file name prefix)
@@ -25,7 +25,7 @@
 #       --quantMode TranscriptomeSAM\
 
 # screen -S star_secondpass
-# sdev -c 4 -m 20G -t 48:00:00 
+# sdev -c 4 -m 30G -t 60:00:00 
 
 module load STAR/2.7.0d
 
@@ -38,12 +38,13 @@ outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass
 sample=80000885526
 # This is the first sample we will be testing– the code will eventually be parallelized so each sample is not completed individually.
 
-STAR 	 --genomeDir ${gindex} \
+STAR	 --genomeDir ${gindex} \
+	 --outSAMstrandField intronMotif \
+	 --readFilesCommand zcat \
+	 --outSAMtype BAM Unsorted \
 	 --sjdbFileChrStartEnd ${base}/star_align/*.SJ.out.tab \
 	 --readFilesIn ${base}/fastq_trim/${sample}_R1.fastq.gz ${base}/fastq_trim/${sample}_R2.fastq.gz \
 	 --outFileNamePrefix ${outdir}/${sample} \
-	 --outSAMstrandField intronMotif \
-	 --readFilesCommand zcat \
+	 --limitSjdbInsertNsj 1700000 \
 	 --runThreadN 4
-	 --outSAMtype BAM Unsorted \
 
