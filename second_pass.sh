@@ -1,15 +1,5 @@
 #!/bin/bash
 
-# See `man sbatch` or https://slurm.schedmd.com/sbatch.html for descriptions
-# of sbatch options.
-#SBATCH --job-name=star_sp
-#SBATCH --cpus-per-task=4
-#SBATCH --partition=interactive
-#SBATCH --account=default
-#SBATCH --time=12:00:00
-#SBATCH --mem-per-cpu=10G
-
-
 # SID is the viallabel (file name prefix)
 # code used to do first pass alignment:
 
