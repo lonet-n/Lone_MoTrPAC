@@ -1,12 +1,5 @@
 #!/bin/bash
 
-#SBATCH --job-name=bamjuncconv
-#SBATCH --cpus-per-task=4
-#SBATCH --partition=interactive
-#SBATCH --account=default
-#SBATCH --time=24:00:00
-#SBATCH --mem-per-cpu=20G
-
 module load STAR/2.7.0d
 module load legacy
 module load leafcutter
