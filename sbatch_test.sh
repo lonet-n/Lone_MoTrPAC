@@ -13,7 +13,7 @@ module load leafcutter
 
 mkdir -p /oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/${sample}
 
-gindex=/oak/stanford/groups/smontgom/nicolerg/MOTRPAC/RNA/REFERENCES/rn6_ensembl_r95/star_index
+gindex=/projects/motrpac/PIPELINES/REFERENCES/rn6_ensembl_r96
 # This is the path to the STAR index.
 base=/projects/motrpac/PASS1A/RNA/NOVASEQ_BATCH1/from_bic
 # This is the path to the directory with the STAR Align and FastQ files.
