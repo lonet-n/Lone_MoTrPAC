@@ -1,4 +1,4 @@
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 1h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 1h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505 \ # 7h male gastroc control 
 	90009015505 90028015505 90046015505 90118015505 90136015505 \ # 0h male gastroc exercised
 	90007015505 90025015505 90043015505 90115015505 90133015505 \ # 0.5h male gastroc exercised
@@ -17,7 +17,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -38,7 +38,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -58,7 +58,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -78,7 +78,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -98,7 +98,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -118,7 +118,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
@@ -138,7 +138,7 @@ done
 
 ##############
 
-for sample in 90001015505 90037015505 90109015505 90127015505 90145015505\ # 0h male gastroc control
+for sample in 90001015505 90037015505 90109015505 90127015505 90145015505 \ # 0h male gastroc control
 	90015015505 90033015505 90123015505  90141015505  90159015505; do \ # 7h male gastroc control 
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass/
