@@ -1,7 +1,7 @@
 Author: Talha Lone
 Date: 2020-06-16
 
-This repository is for the work I do on the MoTrPAC data with Nicole Gay.
+This repository is for the work done alongside Nicole Gay on the gastrocnemius tissue obtained from male rats undergoing acute endurance exercise from the MoTrPAC data.
 
 ## Resources: 
 - [Introduction to RNA-seq](https://www.youtube.com/watch?v=tlf6wYJrwKY&list=PLblh5JKOoLUJo2Q6xK4tZElbIvAACEykp)
