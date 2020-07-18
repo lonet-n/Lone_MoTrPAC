@@ -13,7 +13,7 @@ ${exercised_1h[*]} ${exercised_4h[*]} ${exercised_7h[*]} ${exercised_24h[*]} ${e
 
 outdir=/oak/stanford/groups/smontgom/lonet/motrpac/star_secondpass
 
-echo ${outdir}/${sample}Aligned.out.bam.junc >> ${outdir}/junc_paths.txt
+echo ${outdir}/${sample}/${sample}Aligned.out.bam.junc >> ${outdir}/junc_paths.txt
 
 done
 # This makes a text file with the paths to all of the .junc files that will be used in the intron clustering step. 
