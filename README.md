@@ -12,8 +12,15 @@ This repository is for the work done alongside Nicole Gay on the gastrocnemius t
 
 ## Workflow 
 1. Second pass alignment with STAR (2.7.0d)
+     - star_pass2.sh
 2. Process BAMs for `leafcutter`
+     - bam_to_junc.sh
 3. Run `leafcutter`
+     - groups.sh
+     - intron_cluster.sh
+     - rn6_gtf2exon.sh
+     - ds_analysis.sh
+     - ds_plot.sh
 
 ## Run `leafcutter` on SCG
 ```{bash}
