@@ -26,14 +26,14 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv0.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv0.txt
 
 done
 
 
 for sample in ${exercised_0h[*]}; do # 0h male gastroc exercised
 
-echo ${sample}Aligned.out.bam zero_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv0.txt
+echo ${sample}Aligned.out.bam zero_hour >> ${outdir}/gastroc_male_groups/cv0.txt
 
 done
 # This makes a text file with the bam file names for the control vs 0h exercise differential intron excision analysis.
@@ -42,13 +42,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cvhalf.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cvhalf.txt
 
 done
 
 for sample in ${exercised_halfh[*]}; do # 0.5h male gastroc exercised
 
-echo ${sample}Aligned.out.bam half_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cvhalf.txt
+echo ${sample}Aligned.out.bam half_hour >> ${outdir}/gastroc_male_groups/cvhalf.txt
 
 done
 # This makes a text file with the bam file names for the control vs 0.5h exercise differential intron excision analysis.
@@ -57,13 +57,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv1.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv1.txt
 
 done
 
 for sample in ${exercised_1h[*]}; do # 1h male gastroc exercised
 
-echo ${sample}Aligned.out.bam one_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv1.txt
+echo ${sample}Aligned.out.bam one_hour >> ${outdir}/gastroc_male_groups/cv1.txt
 
 done
 # This makes a text file with the bam file names for the control vs 1h exercise differential intron excision analysis.
@@ -72,13 +72,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv4.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv4.txt
 
 done
 
 for sample in ${exercised_4h[*]}; do # 4h male gastroc exercised
 
-echo ${sample}Aligned.out.bam four_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv4.txt
+echo ${sample}Aligned.out.bam four_hour >> ${outdir}/gastroc_male_groups/cv4.txt
 
 done
 # This makes a text file with the bam file names for the control vs 4h exercise differential intron excision analysis.
@@ -87,13 +87,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv7.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv7.txt
 
 done
 
 for sample in ${exercised_7h[*]}; do # 7h male gastroc exercised
 
-echo ${sample}Aligned.out.bam seven_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv7.txt
+echo ${sample}Aligned.out.bam seven_hour >> ${outdir}/gastroc_male_groups/cv7.txt
 
 done
 # This makes a text file with the bam file names for the control vs 7h exercise differential intron excision analysis.
@@ -102,13 +102,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv24.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv24.txt
 
 done
 
 for sample in ${exercised_24h[*]}; do # 24h male gastroc exercised
 
-echo ${sample}Aligned.out.bam twentyfour_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv24.txt
+echo ${sample}Aligned.out.bam twentyfour_hour >> ${outdir}/gastroc_male_groups/cv24.txt
 
 done
 # This makes a text file with the bam file names for the control vs 24h exercise differential intron excision analysis.
@@ -117,13 +117,13 @@ done
 
 for sample in ${control_0h[*]} ${control_7h[*]}; do
 
-echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/gastroc_male_cv48.txt
+echo ${sample}Aligned.out.bam control >> ${outdir}/gastroc_male_groups/cv48.txt
 
 done
 
 for sample in ${exercised_48h[*]}; do # 48h male gastroc exercised
 
-echo ${sample}Aligned.out.bam fortyeight_hour >> ${outdir}/gastroc_male_groups/gastroc_male_cv48.txt
+echo ${sample}Aligned.out.bam fortyeight_hour >> ${outdir}/gastroc_male_groups/cv48.txt
 
 done
 # This makes a text file with the bam file names for the control vs 48h exercise differential intron excision analysis.
