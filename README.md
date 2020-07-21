@@ -20,7 +20,7 @@ This repository is for the work done alongside Nicole Gay on the gastrocnemius t
      - intron_cluster.sh
      - rn6_gtf2exon.sh
      - ds_analysis.sh
-     - ds_plot.sh
+     - ds_plot.R
 
 ## Run `leafcutter` on SCG
 ```{bash}
