@@ -30,19 +30,16 @@ ${leafcutter}/scripts/leafcutter_ds.R --num_threads 4 --exon_file=${outdir}/rn6_
 mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv4
 mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv4
 
+# The flag -g 3 is added on all of the following so that the code will run despite having a small sample size.
 
+${leafcutter}/scripts/leafcutter_ds.R -g 3 --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv7.txt
+mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv7
+mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv7
 
-# The following have been commented out because LeafCutter is unable to perform the differential intron excision analysis on them.
-# Leafcutter requires n≥4 samples, however these trials only have 3 samples. 
+${leafcutter}/scripts/leafcutter_ds.R -g 3 --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv24.txt
+mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv24
+mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv24
 
-# ${leafcutter}/scripts/leafcutter_ds.R --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv7.txt
-# mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv7
-# mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv7
-
-# ${leafcutter}/scripts/leafcutter_ds.R --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv24.txt
-# mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv24
-# mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv24
-
-# ${leafcutter}/scripts/leafcutter_ds.R --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv48.txt
-# mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv48
-# mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv48
+${leafcutter}/scripts/leafcutter_ds.R -g 3 --num_threads 4 --exon_file=${outdir}/rn6_exons.txt.gz ${outdir}/gastroc_male_intron_cluster/*_perind_numers.counts.gz ${outdir}/gastroc_male_groups/cv48.txt
+mv leafcutter_ds_cluster_significance.txt ${outdir}/gastroc_male_ds_analysis/cv48
+mv leafcutter_ds_effect_sizes.txt ${outdir}/gastroc_male_ds_analysis/cv48
