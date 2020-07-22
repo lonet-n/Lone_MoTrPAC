@@ -16,10 +16,10 @@ groups <- c('cv0','cvhalf','cv1','cv4','cv7','cv24','cv48')
 for (sample in groups) { 
   
 counts_file="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_intron_cluster/gastroc_male_perind_numers.counts.gz"
-groups_file="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_groups/"sample".txt
-cluster_significance_file="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_ds_analysis/"sample"/leafcutter_ds_cluster_significance.txt"
+groups_file="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_groups/sample.txt"
+cluster_significance_file="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_ds_analysis/sample/leafcutter_ds_cluster_significance.txt"
 exon_file="/oak/stanford/groups/smontgom/lonet/motrpac/rn6_exons.txt.gz"
-output="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_ds_analysis/"sample"/sashimi.pdf"
+output="/oak/stanford/groups/smontgom/lonet/motrpac/gastroc_male_ds_analysis/sample/sashimi.pdf"
 
 cat("Loading counts from",counts_file,"\n")
 if (!file.exists(counts_file)) stop("File ",counts_file," does not exist")
