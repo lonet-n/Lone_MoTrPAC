@@ -52,6 +52,8 @@ cluster_table=read.table(cluster_significance_file, header=T, sep="\t", stringsA
 qvalues=leafcutter:::bh(cluster_table$p)
 top_clus=cluster_table$cluster[ which(qvalues < 0.05) ]
 
+write.table(top_clus, top_clus.txt, sep = " ")
+
 if (length(top_clus) > 30) 
   top_clus=cluster_table$cluster[ order(qvalues)[seq_len(30)] ]
 
