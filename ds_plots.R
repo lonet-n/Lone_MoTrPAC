@@ -84,7 +84,7 @@ for (i in groups[1:7]) {
   write.table(df, file = '/oak/stanford/groups/smontgom/lonet/motrpac/topclus.txt', sep = "\t", row.names = FALSE)
   
   if (length(top_clus) > 30)
-    top_clus=cluster_table$cluster[ order(qvalues)[seq_len(30)] ]
+  top_clus=cluster_table$cluster[ order(qvalues)[seq_len(90)] ]
   
   cat("Saving",length(top_clus),"plots to",output,"\n")
   introns=get_intron_meta(rownames(counts))

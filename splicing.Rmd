@@ -1,0 +1,32 @@
+---
+title: "Splicing_Analysis"
+author: "Talha Lone"
+date: "7/20/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+knitr::opts_knit$set(root.dir="/oak/stanford/groups/smontgom/lonet/motrpac")
+```
+load data
+```{r}
+intron=read.table("gastroc_male_intron_cluster/gastroc_male_perind_numers.counts.gz", sep=" ", header=T)
+head(intron)
+colnames(intron)=gsub("Aligned.*", "", colnames(intron))
+```
+
+```{r, fig.width=4,fig.height=3}
+df = data.frame(timepoint = c('0','0.5','1','4','7','24','48'), N = c(8, 34, 51, 43, 43, 36, 88))
+library(ggplot2)
+ggplot(df, aes(x=timepoint, y=N)) +
+	geom_bar(stat='identity') +
+	theme_classic() +
+	labs(x = 'Time post-exercise (hours)', y='Number of alt. splicing events', title='Exercise-induced alternative splicing in male gastrocnemius')
+ggplot(df, aes(x=timepoint, y=N)) +
+	geom_bar(stat='identity', colour='black', fill='green3') +
+	theme_classic() +
+	labs(x = 'Time post-exercise (hours)', y='Number of alt. splicing events', title='Exercise-induced alternative splicing in male gastrocnemius') +
+  scale_x_discrete(limits = c('0','0.5','1','4','7','24','48'))
+```	
